@@ -5,6 +5,8 @@ class AllureClient {
     axios.defaults.baseURL = host;
     axios.defaults.headers.common['Content-Type'] = 'application/json';
     axios.defaults.headers.common['accept'] = '*/*';
+    axios.defaults.maxContentLength = Infinity;
+    axios.defaults.maxBodyLength = Infinity;
   }
 
   async login(username, password) {

@@ -11,3 +11,4 @@ test.mjs
 package-lock.json
 allure-results
 test.js
+.npmrc
